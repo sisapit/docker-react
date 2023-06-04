@@ -11,3 +11,13 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev    
+    volumes:
+      - /app/node_modules
+      - .:/app
+    # Override command in container
+    command: ["npm","run","test"]
+    
