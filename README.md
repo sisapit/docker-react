@@ -4,6 +4,8 @@
 ``docker build -f Dockerfile.dev -t sscheffler.eu/frontend .``
 ``docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app sscheffler.eu/frontend``
 
+``docker-compose up``
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
