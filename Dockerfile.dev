@@ -4,8 +4,10 @@ WORKDIR '/app'
 
 COPY package.json .
 
+# Install development dependencies.
 RUN npm install
 
 COPY . .
 
+# Start development server.
 CMD ["npm","run","start"]
