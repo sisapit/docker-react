@@ -5,8 +5,8 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.dev
-    # docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app sscheffler.eu/frontend
     ports:
+      # docker run -p 4300:3000 -v /app/node_modules -v $(pwd):/app sscheffler.eu/frontend
       - "4200:3000"
     volumes:
       - /app/node_modules

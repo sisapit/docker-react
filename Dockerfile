@@ -1,3 +1,6 @@
+
+### Build productive minimal image and run application on nginx web server.
+
 ### Build Phase
 
 FROM node:20-alpine as builder
@@ -16,5 +19,5 @@ FROM nginx
 WORKDIR /usr/share/nginx/html
 COPY --from=builder /app/build .
 
-# docker build .
-# docker run -p 8080:80 7078d49967ce
+# docker build . -t sscheffler.eu/docker-react
+# docker run -p 8080:80 sscheffler.eu/docker-react
