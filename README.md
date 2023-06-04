@@ -6,6 +6,9 @@
 
 ``docker-compose up``
 
+``docker build -f Dopckerfile.dev .``
+``docker run 3b80f094975c npm run test``
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
