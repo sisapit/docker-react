@@ -4,6 +4,8 @@ WORKDIR '/app'
 
 COPY package.json .
 
+EXPOSE 3000
+
 # Install development dependencies.
 RUN npm install
 
